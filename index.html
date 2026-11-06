@@ -53,6 +53,8 @@
   .btn:hover{background:var(--gold-dark);color:#fff}
   .btn:disabled{opacity:.85;cursor:default}
   .micro{color:var(--muted);font-size:13px;margin-top:12px}
+  /* Narrow screens: the embedded form's text wraps taller, so give the frame extra room (no inner scrolling) */
+  @media(max-width:480px){.signup iframe{height:700px}}
 
   section{padding:26px 0 4px}
   .sec-title{font-size:22px;text-align:center;margin-bottom:6px}
@@ -133,7 +135,7 @@
          must redirect to thanks.html after the double opt-in signup.
          ================================================================ -->
     <!-- BREVO_FORM_EMBED -->
-    <iframe width="540" height="340" src="https://31de21b1.sibforms.com/v2/serve/MUIFAIovh0oAj7HCetqJD7OQR5SffLw7AfvuvEtyWMd6FcSqaUFUhY-xrigJ_QhcumfHL5VVZdVQ-oy73A2zLHhQbDe1Y-EbgMTzu3NtOuHoA6-xFxbum4bDnwBDJRl8LNtLnnL7zn8Z0jCI8KntxPM-Nr75D8z7C2NdyeG8yLyU2vfbyDkmhkvXTAOAZ4ez54Cz6ohwz-fiiwrusw==" frameborder="0" scrolling="auto" allowfullscreen style="display: block;margin-left: auto;margin-right: auto;max-width: 100%;border:0;border-radius:8px;" title="Get 5 free captions — email signup"></iframe>
+    <iframe width="540" height="600" src="https://31de21b1.sibforms.com/v2/serve/MUIFAIovh0oAj7HCetqJD7OQR5SffLw7AfvuvEtyWMd6FcSqaUFUhY-xrigJ_QhcumfHL5VVZdVQ-oy73A2zLHhQbDe1Y-EbgMTzu3NtOuHoA6-xFxbum4bDnwBDJRl8LNtLnnL7zn8Z0jCI8KntxPM-Nr75D8z7C2NdyeG8yLyU2vfbyDkmhkvXTAOAZ4ez54Cz6ohwz-fiiwrusw==" frameborder="0" scrolling="no" allowfullscreen style="display: block;margin-left: auto;margin-right: auto;max-width: 100%;border:0;border-radius:8px;overflow:hidden;" title="Get 5 free captions — email signup"></iframe>
     <!-- /BREVO_FORM_EMBED -->
 
     <p class="micro">Free forever. No spam — one useful email a week, unsubscribe anytime.</p>
